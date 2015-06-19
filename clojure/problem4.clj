@@ -18,6 +18,6 @@
     (recur pred tail)))
 
 (last (sort (filter palindrome?
-  (mapcat
-    (fn [x] (map (partial * x) (three-digits)))
-    (three-digits)))))
+                    (mapcat
+                     (fn [x] (map (partial * x) (three-digits)))
+                     (three-digits)))))

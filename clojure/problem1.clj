@@ -4,9 +4,9 @@
 
 (defn by3or5 [x]
   (or
-    ((by 3) x)
-    ((by 5) x)))
+   ((by 3) x)
+   ((by 5) x)))
 
 (println
-  (reduce +
-    (filter by3or5 (range 1000))))
+ (reduce +
+         (filter by3or5 (range 1000))))
